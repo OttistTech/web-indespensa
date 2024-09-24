@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Área Restrita - InDespensa
+O objetivo deste projeto é fornecer uma interface segura e intuitiva para que a equipe do InDespensa possa acessar e gerenciar informações estratégicas sobre o aplicativo InDespensa, facilitando a tomada de decisões e a obtenção de insights valiosos. Nessa área, é fornecido dashboards para o melhor entendimento dos dados.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Funcionalidades 
+- **Visualizações de Dados Interativas**: Gráficos e tabelas interativas que apresentam dados estratégicos de forma clara e compreensível.
 
-## Available Scripts
+## 🍳 Tecnologias Utilizadas
+- **Linguagem de Programação**: HTML, CSS, JavaScript
+- **Serviço de Hospedagem**: Não sabemos ainda
 
-In the project directory, you can run:
+## 🤝 Colaboradores
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/pedroggwp" title="Perfil do Pedro H. Nascimento">
+        <img src="https://github.com/pedroggwp.png" width="100px;" alt="Foto do Pedro Henrique no GitHub"/><br>
+        <sub>
+          <b>Pedro H. Nascimento</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Davipiassi" title="Perfil do Davi Piassi">
+        <img src="https://github.com/Davipiassi.png" width="100px;" alt="Foto do Davi Piassi no GitHub"/><br>
+        <sub>
+          <b>Davi Piassi</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-### `npm start`
+## 🔡 Padrões de Branch
+Para organização, novas branches devem ser criadas seguindo o seguinte padrão: `tipo/numeroDaTarefa/nomeDescritivo`
+#### Tipos de Branch
+| Tipo   | Decrição            |
+| ------ | ------------------- |
+| feat   | Nova funcionalidade | 
+| debug  | Correção de bug     |
+| config | Configuração        |
+| doc    | Documentação        |
+#### Número da Tarefa
+Código da tarefa no quadro do [Trello](https://trello.com/b/5BLwrWfB/indespensa)
+#### Nome Descritivo
+Nome extremamente breve que represente o que foi feito naquela modificação
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📝 Licença
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE) para mais detalhes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ✍ Contato
+Para dúvidas ou suporte, entre em contato com ottis.indespensa@gmail.com
