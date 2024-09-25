@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.profile_picture {
+    height: 40px;
+}
+
+.profile_name {
+    min-width: 5rem;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.menu_appearance{
+    width: 24px;
+    height: 24px;
+    background-image: url("../../assets/images/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu_checkbox {
+    display: none;
+}
+
+.menu_items {
+    display: none;
+    box-sizing: content-box;
+    width: 8em;
+    padding: 1em 2em;
+    position: absolute;
+    top: 12vh;
+    z-index: 2;
+    background-color: var(--color-white);
+}
+
+.menu_item {
+    padding: 4px 0;
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.menu_item_text {
+    color: var(--color-black);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu_item_text:hover {
+    font-weight: 600;
+    color: var(--color-secondary)
+}
+
+.menu_checkbox:checked ~ .menu_items{
+    display: block;
+}
+
+.menu_image{
+    padding: 1em;
+}
