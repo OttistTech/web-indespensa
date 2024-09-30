@@ -8,14 +8,50 @@ import { useNavigate } from 'react-router-dom'
 export default function Login({onLogin, navigateTo}) {
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
+  const [error, setError] = useState(null)
 
   const navigate = useNavigate()
 
-  const handleSubmit = (e) => {
+  const getApiUser = async () => {
+    try {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/users/login`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({email, password})
+      })
+
+      if (!response.ok) {
+        if (
+          response.status === 400 || 
+          response.status === 401 ||
+          response.status === 404 ||
+          response.status === 410
+        ) {
+          throw new Error("Usuário ou senha incorretos")
+        } else {
+          throw new Error("Não foi possível autenticar")
+        }
+      }
+
+      return await response.json()
+    } catch (error) {
+      setError(error.message);
+    }
+  }
+
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    if(email === "Davi" && password === "1234") {
-      onLogin({ name: email })
-      navigate(navigateTo)
+    const userData = await getApiUser()
+    if (userData) {
+      if(userData.type === "ADMIN") {
+        setError(null)
+        onLogin({ name: userData.name })
+        navigate(navigateTo)
+      } else {
+        setError("O usuário não tem permissão para acessar esse recurso")
+      }
     }
   }
 
@@ -35,6 +71,7 @@ export default function Login({onLogin, navigateTo}) {
             placeholder="Senha"
             onChange={setPassword}
           />
+          <p className={error ? styles.error : styles.hidden}>{error}</p>
           <Button 
             type="submit"
             mode="primary"
