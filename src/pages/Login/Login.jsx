@@ -3,15 +3,19 @@ import banner from '../../assets/images/banner.png'
 import Button from '../../components/Button/Button'
 import Input from '../../components/Input/Input'
 import styles from './Login.module.css'
+import { useNavigate } from 'react-router-dom'
 
-export default function Login({onLogin}) {
+export default function Login({onLogin, navigateTo}) {
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
+
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault()
     if(email === "Davi" && password === "1234") {
       onLogin({ name: email })
+      navigate(navigateTo)
     }
   }
 

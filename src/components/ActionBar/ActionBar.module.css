@@ -1,0 +1,32 @@
+.container {
+    height: 5em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6fr 4fr 4fr 3fr;
+    gap: 2em;
+    align-items: center;
+}
+
+.select {
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    width: fit-content;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-black);
+    cursor: pointer
+}
+
+.description {
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: var(--color-gray);
+}
+
+.label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: var(--color-black);
+}

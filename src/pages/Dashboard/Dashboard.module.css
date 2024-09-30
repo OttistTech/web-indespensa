@@ -1,0 +1,5 @@
+.page {
+    padding: 0.5em 1.5em;
+    overflow-y: auto;
+    height: calc(100vh - 80px);
+}

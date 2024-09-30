@@ -52,7 +52,10 @@ function App() {
             <Route 
               path="/login" 
               element={
-                <Login onLogin={loginUser} />
+                <Login 
+                  onLogin={loginUser} 
+                  navigateTo="/dashboard"
+                />
               } 
             />
             <Route 
