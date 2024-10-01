@@ -1,6 +1,6 @@
 import styles from './Button.module.css'
 
-export default function Button({type, mode, text, onClick}) {
+export default function Button({type, mode, text, enabled=true, onClick}) {
     const modes = {
         'primary': styles.primary,
         'secondary': styles.secondary,
@@ -8,6 +8,6 @@ export default function Button({type, mode, text, onClick}) {
     }
 
     return (
-        <button className={modes[mode]} onClick={onClick} type={type}>{text}</button>
+        <button className={modes[mode]} onClick={onClick} type={type} disabled={!enabled}>{text}</button>
     )
 }
