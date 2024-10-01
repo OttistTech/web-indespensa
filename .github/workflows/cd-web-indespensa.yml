@@ -1,10 +1,8 @@
-name: CI Web Indespensa
+name: CD Web Indespensa
 
 on:
-  pull_request:
-    branches: ["main", "QA"]
   push:
-    branches: ["main"]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -31,3 +29,9 @@ jobs:
         with:
           name: build
           path: build/
+
+      - name: Render Deploy Action
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.RENDER_SERVICE_ID }}
+          api-key: ${{ secrets.RENDER_API_KEY }}
