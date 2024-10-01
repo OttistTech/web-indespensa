@@ -27,5 +27,18 @@
 
 .banner {
     width: 100%;
-    height: 85vh;
+    height: calc(100vh - 80px);
+}
+
+.error {
+    margin: 1em 0 0.5em 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-red)
+}
+
+.hidden {
+    display: none;
 }
