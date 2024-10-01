@@ -15,3 +15,8 @@
     transition: 0.5s;
     background-color: #E95D00;
 }
+
+.primary:disabled {
+    transition: 0.1s;
+    background-color: var(--color-gray);
+}
