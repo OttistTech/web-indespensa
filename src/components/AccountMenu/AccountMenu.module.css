@@ -6,6 +6,7 @@
 
 .profile_picture {
     height: 40px;
+    margin-right: 0.5em;
 }
 
 .profile_name {
@@ -64,4 +65,14 @@
 
 .menu_image{
     padding: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile_name {
+        display: none;
+    }
+
+    .menu_items {
+        top: 10vh
+    }
 }

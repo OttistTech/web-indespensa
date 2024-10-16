@@ -9,6 +9,7 @@ export default function Login({onLogin, navigateTo}) {
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
   const [error, setError] = useState(null)
+  const [isLoading, setIsLoading] = useState(false)
 
   const navigate = useNavigate()
 
@@ -43,7 +44,9 @@ export default function Login({onLogin, navigateTo}) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    setIsLoading(true)
     const userData = await getApiUser()
+    setIsLoading(false)
     if (userData) {
       if(userData.type === "ADMIN") {
         setError(null)
@@ -76,6 +79,7 @@ export default function Login({onLogin, navigateTo}) {
             type="submit"
             mode="primary"
             text="Entrar"
+            enabled={!isLoading}
             onClick={(e) => handleSubmit(e)}
           />
         </form>

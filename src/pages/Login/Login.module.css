@@ -42,3 +42,34 @@
 .hidden {
     display: none;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .page {
+        display: block;
+        background-image: url('../../assets/images/banner.png');
+        height: calc(100vh - 80px);
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .container {
+        padding: 15% 10%;
+        background: linear-gradient(to bottom, 
+        var(--color-white) 50%,   /* Cor sólida nos primeiros 90% */
+        rgba(0, 128, 255, 0) 100%   /* Transparência nos últimos 10% */
+        );
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 1.25rem;
+    }
+    
+    .description {
+        font-size: 0.75rem;
+    }
+}
