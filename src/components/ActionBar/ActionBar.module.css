@@ -31,7 +31,7 @@
     color: var(--color-black);
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
     .container {
         margin-top: 1em;
         margin-bottom: 0.5em;
