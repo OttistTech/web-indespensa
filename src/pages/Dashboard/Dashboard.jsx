@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ActionBar from '../../components/ActionBar/ActionBar';
 import DashboardView from '../../components/DashboardView/DashboardView';
 import styles from './Dashboard.module.css';
+import AnalyticsBar from '../../components/AnalyticsBar/AnalyticsBar';
 
 const getLastAccessedDashboard = () => {
   const item = localStorage.getItem('last_accessed_dashboard')
@@ -46,6 +47,7 @@ export default function Dashboard() {
 
   return (
     <div className={styles.page}>
+      <AnalyticsBar/>
       <ActionBar
         dashboards={availableDashboards}
         currentDashboard={{...availableDashboards[currentDashboard], lastUpdate}}

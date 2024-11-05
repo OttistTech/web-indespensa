@@ -1,0 +1,18 @@
+.item {
+    width: 100%;
+    padding: 0.2rem 2rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: var(--color-light-gray);
+}
+
+.label {
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.data {
+    color: var(--color-gray);
+    font-weight: 500;
+    font-size: 0.8em;
+}
