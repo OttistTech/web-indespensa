@@ -40,13 +40,13 @@ export default function AccountMenu({ loggedUser, onLogout }) {
                 </li>
                 <li className={styles.menu_item}>
                     <a 
-                        href="https://github.com/OttistTech/web-indespensa"
+                        href="https://servlet-indespensa.onrender.com/app/LandingPage/index.jsp"
                         className={styles.menu_item_text}
                     >Landing Page</a>
                 </li>
                 <li className={styles.menu_item}>
                     <a 
-                        href="https://github.com/OttistTech/web-indespensa"
+                        href="https://servlet-indespensa.onrender.com/app/SupportPage/index.html"
                         className={styles.menu_item_text}
                     >Contato</a>
                 </li>
