@@ -127,17 +127,21 @@ export default function AnalyticsBar() {
                 <article className={styles.item}>
                     <h4 className={styles.subtitle}>Conteúdo médio dos produtos por categoria - kg/g/l/ml</h4>
                     <ul className={styles.list}>
-                        {state.averageCategoriesAmount.map(data => 
-                            <ListItem label={data.categoryName} data={data.averageAmount}/>
-                        )}
+                        {typeof state.averageCategoriesAmount === 'object' ? 
+                            state.averageCategoriesAmount.map(data => 
+                                <ListItem label={data.categoryName} data={data.averageAmount}/>
+                            ) : <></>
+                        }
                     </ul>
                 </article>
                 <article className={styles.item}>
                     <h4 className={styles.subtitle}>5 marcas mais recomendadas</h4>
                     <ol className={styles.list}>
-                        {state.topFiveRecommendedBrands.map(data => 
-                            <ListItem label={data.brandName} data={data.count}/>
-                        )}
+                        {typeof state.topFiveRecommendedBrands === 'object' ?
+                            state.topFiveRecommendedBrands.map(data => 
+                                <ListItem label={data.brandName} data={data.count}/>
+                            ) : <></>
+                        }
                     </ol>
                 </article>
             </section>
